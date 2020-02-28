@@ -1,0 +1,463 @@
+2020-02-28 15:08:15.327  INFO 14160 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e47ec5e: startup date [Fri Feb 28 15:08:15 CST 2020]; root of context hierarchy
+2020-02-28 15:08:17.993  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-02-28 15:08:18.173  INFO 14160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2846 ms
+2020-02-28 15:08:18.334  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-28 15:08:18.343  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-28 15:08:18.343  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-28 15:08:18.343  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-28 15:08:18.343  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-28 15:08:19.131  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:19.134  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:19.134  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.134  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.135  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.139  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.140  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.146  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:19.147  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:19.147  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.147  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:19.147  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.149  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.149  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.149  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:19.149  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:19.150  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.150  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.150  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.151  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.151  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:19.151  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:19.151  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.152  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.152  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2020-02-28 15:08:19.152  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2020-02-28 15:08:19.152  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2020-02-28 15:08:19.153  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2020-02-28 15:08:19.153  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.154  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.155  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.155  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:19.156  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:19.156  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.156  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:19.156  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:19.160  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-02-28 15:08:19.161  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-02-28 15:08:19.161  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-02-28 15:08:19.163  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-28 15:08:19.164  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-28 15:08:19.353  INFO 14160 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-28 15:08:19.515  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:19.796  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e47ec5e: startup date [Fri Feb 28 15:08:15 CST 2020]; root of context hierarchy
+2020-02-28 15:08:19.898  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:19.898  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:19.922  INFO 14160 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2020-02-28 15:08:20.690  INFO 14160 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-02-28 15:08:20.691  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-02-28 15:08:20.731  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-02-28 15:08:20.813  INFO 14160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-02-28 15:08:21.086  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2020-02-28 15:08:21.087  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2020-02-28 15:08:21.197  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2020-02-28 15:08:21.198  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2020-02-28 15:08:21.202  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2020-02-28 15:08:21.203  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2020-02-28 15:08:21.208  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2020-02-28 15:08:21.211  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2020-02-28 15:08:21.212  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2020-02-28 15:08:21.304  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 12761 (http) with context path ''
+2020-02-28 15:08:21.559  INFO 14160 --- [http-nio-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-28 15:08:21.590  INFO 14160 --- [http-nio-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2020-02-28 15:08:21.876 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:21.995  INFO 14160 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.apache.dubbo.admin.AbstractSpringIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-28 15:08:22.001  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-28 15:08:22.002  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@699f258c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4a8c67c0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4fb76470, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3df6babd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d554bca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ce9bc7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@702eebca, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@78859420, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f099be1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f692764]
+2020-02-28 15:08:22.038  INFO 14160 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e5c4173: startup date [Fri Feb 28 15:08:22 CST 2020]; root of context hierarchy
+2020-02-28 15:08:22.457  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-02-28 15:08:22.468  INFO 14160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 430 ms
+2020-02-28 15:08:22.502  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-28 15:08:22.502  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-28 15:08:22.502  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-28 15:08:22.502  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-28 15:08:22.502  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-28 15:08:22.695  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:22.695  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:22.695  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.695  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.696  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.696  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.697  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.698  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:22.698  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:22.698  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.699  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:22.699  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.699  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.699  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.700  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:22.700  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:22.700  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.701  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.701  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.701  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.701  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:22.702  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:22.702  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.702  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.703  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2020-02-28 15:08:22.703  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2020-02-28 15:08:22.703  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2020-02-28 15:08:22.703  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2020-02-28 15:08:22.703  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.704  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:22.704  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:22.704  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.704  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.705  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.705  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.705  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.705  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:22.705  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:22.706  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.706  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:22.706  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:22.707  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-02-28 15:08:22.707  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-02-28 15:08:22.707  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-02-28 15:08:22.708  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-28 15:08:22.709  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-28 15:08:22.749  INFO 14160 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-28 15:08:22.772  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:22.831  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e5c4173: startup date [Fri Feb 28 15:08:22 CST 2020]; root of context hierarchy
+2020-02-28 15:08:22.843  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:22.843  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:22.852  INFO 14160 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2020-02-28 15:08:22.907  INFO 14160 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-02-28 15:08:22.907  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-02-28 15:08:22.908  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-02-28 15:08:22.934  INFO 14160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-02-28 15:08:23.086  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2020-02-28 15:08:23.087  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2020-02-28 15:08:23.218  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2020-02-28 15:08:23.219  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2020-02-28 15:08:23.223  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2020-02-28 15:08:23.224  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2020-02-28 15:08:23.226  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2020-02-28 15:08:23.229  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2020-02-28 15:08:23.231  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2020-02-28 15:08:23.291  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 12789 (http) with context path ''
+2020-02-28 15:08:23.398  INFO 14160 --- [http-nio-auto-2-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-28 15:08:23.411  INFO 14160 --- [http-nio-auto-2-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-02-28 15:08:23.642 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/config/consumers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.653 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/config/routers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.667 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/config/configurators
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.680 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/config/providers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.709 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/org.apache.dubbo.demo.DemoService/consumers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.733 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/org.apache.dubbo.demo.DemoService/routers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.740 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/org.apache.dubbo.demo.DemoService/configurators
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.754 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo/org.apache.dubbo.demo.DemoService/providers
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:23.756 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:24.216  INFO 14160 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.apache.dubbo.admin.AbstractSpringIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-28 15:08:24.222  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-28 15:08:24.225  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2bbc2154, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c486bf5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@380e9789, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64649a13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e98b14a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@715070af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3dae13d3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ddaa277, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@16a34e67, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64848114]
+2020-02-28 15:08:24.259  INFO 14160 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32a71425: startup date [Fri Feb 28 15:08:24 CST 2020]; root of context hierarchy
+2020-02-28 15:08:24.746  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-02-28 15:08:24.756  INFO 14160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 497 ms
+2020-02-28 15:08:24.786  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-28 15:08:24.786  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-28 15:08:24.786  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-28 15:08:24.786  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-28 15:08:24.786  INFO 14160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-28 15:08:24.926  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:24.926  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2020-02-28 15:08:24.926  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.927  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.927  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.928  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.929  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:24.929  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:24.929  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.929  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2020-02-28 15:08:24.930  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.930  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.930  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.930  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:24.930  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2020-02-28 15:08:24.931  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.931  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.931  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.932  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.932  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:24.932  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2020-02-28 15:08:24.932  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.932  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.933  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2020-02-28 15:08:24.933  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2020-02-28 15:08:24.933  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2020-02-28 15:08:24.933  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2020-02-28 15:08:24.933  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.934  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:24.934  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2020-02-28 15:08:24.935  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.935  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.935  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.935  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.935  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.936  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:24.936  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2020-02-28 15:08:24.936  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.936  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2020-02-28 15:08:24.936  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2020-02-28 15:08:24.941  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-02-28 15:08:24.941  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-02-28 15:08:24.942  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-02-28 15:08:24.943  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-28 15:08:24.943  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-28 15:08:24.987  INFO 14160 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-28 15:08:25.005  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:25.037  INFO 14160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32a71425: startup date [Fri Feb 28 15:08:24 CST 2020]; root of context hierarchy
+2020-02-28 15:08:25.046  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:25.046  INFO 14160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-28 15:08:25.051  INFO 14160 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2020-02-28 15:08:25.094  INFO 14160 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-02-28 15:08:25.094  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-02-28 15:08:25.095  INFO 14160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-02-28 15:08:25.114  INFO 14160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-02-28 15:08:25.176  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2020-02-28 15:08:25.177  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2020-02-28 15:08:25.228  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2020-02-28 15:08:25.230  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2020-02-28 15:08:25.234  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2020-02-28 15:08:25.235  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2020-02-28 15:08:25.237  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2020-02-28 15:08:25.239  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2020-02-28 15:08:25.240  INFO 14160 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2020-02-28 15:08:25.275  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 12816 (http) with context path ''
+2020-02-28 15:08:25.293  INFO 14160 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-28 15:08:25.297  INFO 14160 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2020-02-28 15:08:25.342 ERROR 14160 --- [main-EventThread] o.a.c.f.imps.CuratorFrameworkImpl        : Watcher exception
+
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:118)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:2619)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:230)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:219)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:207)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:40)
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient$CuratorWatcherImpl.process(CuratorZookeeperClient.java:216)
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:68)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:525)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:500)
+
+2020-02-28 15:08:25.473  INFO 14160 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.apache.dubbo.admin.AbstractSpringIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-28 15:08:25.482  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-28 15:08:25.483  INFO 14160 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5041734f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@447c814a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c75daad, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20f13990, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b71edca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b27453f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9d55c44, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2041d957, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54aa6f28, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@35c5d63f]
+2020-02-28 15:08:26.119  WARN 14160 --- [main-SendThread(localhost:12831)] org.apache.zookeeper.ClientCnxn          : Session 0x0 for server localhost/127.0.0.1:12831, unexpected error, closing socket connection and attempting reconnect
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:75)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1214)
+
+2020-02-28 15:08:26.209  INFO 14160 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.apache.dubbo.admin.service.RegistryServerSyncTest], using DelegatingSmartContextLoader
+2020-02-28 15:08:26.209  INFO 14160 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.apache.dubbo.admin.service.RegistryServerSyncTest]: no resource found for suffixes {-context.xml}.
+2020-02-28 15:08:26.209  INFO 14160 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.apache.dubbo.admin.service.RegistryServerSyncTest]: RegistryServerSyncTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-28 15:08:26.211  INFO 14160 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-28 15:08:26.215  INFO 14160 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@67fd4762, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7770e431, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@73b141a6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49fbd92a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@44305120, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@341174fb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4dd4afae, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5af10db7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c0efe98, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2387f74e]
+2020-02-28 15:08:26.593  INFO 14160 --- [Thread-21] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32a71425: startup date [Fri Feb 28 15:08:24 CST 2020]; root of context hierarchy
+2020-02-28 15:08:26.593  INFO 14160 --- [Thread-2] o.s.c.support.GenericApplicationContext  : Closing org.springframework.context.support.GenericApplicationContext@29d2fa84: startup date [Fri Feb 28 15:08:13 CST 2020]; root of context hierarchy
+2020-02-28 15:08:26.593  INFO 14160 --- [Thread-18] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e5c4173: startup date [Fri Feb 28 15:08:22 CST 2020]; root of context hierarchy
+2020-02-28 15:08:26.595  INFO 14160 --- [Thread-21] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-02-28 15:08:26.598  INFO 14160 --- [Thread-15] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e47ec5e: startup date [Fri Feb 28 15:08:15 CST 2020]; root of context hierarchy
+2020-02-28 15:08:26.598  INFO 14160 --- [Thread-18] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-02-28 15:08:26.599  INFO 14160 --- [Thread-15] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
